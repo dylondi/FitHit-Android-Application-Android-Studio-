@@ -1,0 +1,48 @@
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="AlwaysShowAction"
+
+    >
+
+
+
+
+    <item
+        android:id="@+id/settings_id"
+        android:title="Settings"
+        app:showAsAction="never"
+        ></item>
+    <item
+        android:id="@+id/stats_id"
+        android:title="Statistics"
+        app:showAsAction="never"
+        ></item>
+    <item
+        android:id="@+id/workout_plans_id"
+        android:title="Workout Plans"
+        app:showAsAction="never"
+        ></item>
+    <item
+        android:id="@+id/nutrition_id"
+        android:title="Nutrition  Supplements"
+        app:showAsAction="never"
+        ></item>
+    <item
+        android:id="@+id/goals_id"
+        android:title="Goals  Achievements"
+        app:showAsAction="never"
+        ></item>
+    <item
+        android:id="@+id/map_settings_id"
+        android:title="Map Settings"
+        app:showAsAction="never"
+        ></item>
+    <item
+        android:id="@+id/sign_out"
+        android:title="Sign out"
+        app:showAsAction="never"
+        ></item>
+
+</menu>
+

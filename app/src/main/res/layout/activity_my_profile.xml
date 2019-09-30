@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dylondiruscio.fhv1.MyProfile"
+    android:background="@drawable/gradient"
+    >
+
+    <GridLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:layout_marginTop="75dp"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/gridLayout">
+
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:id="@+id/btn"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:layout_gravity="bottom"
+            android:textSize="10dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="New Picture" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="180dp"
+            android:layout_marginStart="20dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/iv"/>
+
+        <TextView
+            android:id="@+id/usernameDisplay"
+            android:text="Dylon Di Ruscio"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:textSize="30sp"
+            android:fontFamily="@font/typo_round_regular_demo"
+            android:textColor="#fff"
+            />
+
+        <TextView
+
+            android:id="@+id/bmiEditText"
+            android:text="fmf"
+            android:enabled="false"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="50dp"
+            android:textSize="20sp"
+            android:fontFamily="@font/typo_round_light_demo"
+            />
+
+    </GridLayout>
+
+
+
+</RelativeLayout>

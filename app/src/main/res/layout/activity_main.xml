@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gradient"
+    tools:context="com.dylondiruscio.fhv1.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+
+            android:id="@+id/myWorkoutBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="170dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/newmainbtn"
+            android:onClick="myWorkoutBtn" />
+
+        <Button
+
+            android:id="@+id/mealPlanBtn"
+            android:layout_width="165dp"
+            android:layout_height="160dp"
+            android:layout_alignStart="@+id/myWorkoutBtn"
+            android:layout_below="@id/myWorkoutBtn"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/mealplanbtn"
+            android:onClick="mealPlanBtn" />
+
+        <Button
+
+            android:id="@+id/gymsNearMeBtn"
+            android:layout_width="165dp"
+            android:layout_height="160dp"
+
+            android:layout_alignBaseline="@+id/mealPlanBtn"
+            android:layout_alignBottom="@+id/mealPlanBtn"
+            android:layout_alignEnd="@+id/myWorkoutBtn"
+            android:background="@drawable/gymsnearme"
+            android:onClick="gymsNearMeBtn" />
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_below="@id/gymsNearMeBtn"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/newsfeedbtn" />
+
+        <Button
+            android:id="@+id/googleBtn"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/gymsNearMeBtn"
+            android:layout_marginLeft="139dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/newsfeedbutton" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dylondiruscio.fhv1">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label=""
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/CustomActionBarTheme" />
+        <activity android:name=".InfoActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/SplashTheme" />
+        <activity
+            android:name=".myWorkouts"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".MealPlan"
+            android:theme="@style/AppTheme2" />
+        <activity android:name=".GymsNearMe" />
+        <activity
+            android:name=".Overflow.Settings"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".Overflow.Statistics"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".Overflow.WorkoutPlans"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".Overflow.Nutrition"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".Overflow.Goals"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".Overflow.MapSettings"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".MyProfile"
+            android:theme="@style/CustomActionBarTheme" />
+        <activity
+            android:name=".NewWorkout"
+            android:theme="@style/AppTheme2" />
+        <activity android:name=".RegisterActivity" />
+        <activity
+            android:name=".Workouts.WorkoutOne"
+            android:theme="@style/AppTheme2" />
+        <activity android:name=".MealPlans.MealPlanOne"
+            android:theme="@style/AppTheme2"/>
+        <activity android:name=".MealPlans.MealPlans"
+            android:theme="@style/AppTheme2"/>
+    </application>
+
+</manifest>
